@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Banner />
       <h2 className="text-center text-3xl font-bold my-8">Our Books</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 mb-[100px]">
         {books.map(book => (
           <div key={book.bookId} className="bg-white p-4 border border-solid">
             <img src={book.image} alt={book.bookName} className="w-full h-60 object-cover" />
