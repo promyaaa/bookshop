@@ -24,7 +24,7 @@ const Banner = () => {
         <img
             src="assets/bookbanner.jpg"
             alt="Books"
-            className="md:h-96 object-cover mt-4 md:mt-0"
+            className="md:object-cover mt-4 md:mt-0"
             />
     </div>
 
