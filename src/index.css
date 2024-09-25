@@ -23,3 +23,7 @@ code {
   width: 100%;
   z-index: 1; /* Position the footer above other elements */
 }
+
+nav .active {
+  text-decoration: underline;
+}

@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import FAQ from './pages/FAQ';
+import NotFoundPage from './pages/404page';
 import BookDetails from './pages/BookDetails';
 import Navbar from './components/Navbar';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/book/:bookId" element={<BookDetails />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       
     </Router>
