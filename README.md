@@ -16,6 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-live link [concerned-babies-book-shop.surge.sh](concerned-babies-book-shop.surge.sh)
+live link [https://concerned-babies-book-shop.surge.sh/](https://concerned-babies-book-shop.surge.sh/)
 
 
