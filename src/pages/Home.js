@@ -1,0 +1,26 @@
+import Banner from '../components/Banner';
+import books from '../data.json';
+import { Link } from 'react-router-dom';
+
+const Home = () => {
+  return (
+    <div>
+      <Banner />
+      <h2 className="text-center text-3xl font-bold my-8">Our Books</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+        {books.map(book => (
+          <div key={book.bookId} className="bg-white p-4 shadow-lg">
+            <img src={book.image} alt={book.bookName} className="w-full h-60 object-cover" />
+            <h3 className="font-bold text-xl mt-4">{book.bookName}</h3>
+            <p>By {book.author}</p>
+            <p>Category: {book.category}</p>
+            <p>Rating: {book.rating}</p>
+            <Link to={`/book/${book.bookId}`} className="bg-blue-500 text-white px-4 py-2 mt-4 block text-center">Book Details</Link>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Home;
