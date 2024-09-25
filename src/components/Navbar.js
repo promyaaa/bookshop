@@ -12,7 +12,9 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white font-bold text-2xl">Bookshop</h1>
+        <h1 className="text-white font-bold text-2xl no-underline">
+            <NavLink to="/">Bookshop</NavLink>
+        </h1>
 
         {/* Menu button for small screens */}
         <div className="md:hidden">

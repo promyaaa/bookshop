@@ -24,6 +24,10 @@ code {
   z-index: 1; /* Position the footer above other elements */
 }
 
+nav h1 a.active {
+  text-decoration: none;
+}
+
 nav .active {
   text-decoration: underline;
 }
